@@ -128,6 +128,9 @@ cnoremap <C-B> <Left>
 cnoremap <Esc>b <S-Left>
 cnoremap <Esc>f <S-Right>
 
+set termwinsize=10x0
+
 " Set main configuration directory as parent directory
 let $VIM_PATH = fnamemodify(resolve(expand('<sfile>:p')), ':h:h')
-execute 'source' fnamemodify(expand('<sfile>'), ':h').'/pack/plugins.vim'
+execute 'source' fnamemodify(expand('<sfile>'), ':h').'/plugin/plugins.vim'
+execute 'source' fnamemodify(expand('<sfile>'), ':h').'/autoload/event.vim'
