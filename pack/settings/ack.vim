@@ -9,3 +9,5 @@
 " v    to open in vertical split
 " gv   to open in vertical split, keeping focus on the results
 " q    to close the quickfix window
+cnoreabbrev Ack Ack!
+nnoremap <Leader>a :Ack!<Space>
