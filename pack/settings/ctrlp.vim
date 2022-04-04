@@ -25,8 +25,8 @@
 "    提交两个或更多点 ..向上一级或多级目录树。
 "    以冒号结束输入字符串 :然后是在打开的文件上执行它的命令： 采用 :25跳到第 25 行。 采用 :diffthis打开多个文件运行时 :diffthis在前 4 个文件上。
 
-let g:ctrlp_map = '' " disable c-p maping, and next line also map cmd to this keybind
-let g:ctrlp_cmd = 'Ctrlp'
+let g:ctrlp_map = '<leader>p' " disable c-p maping, and next line also map cmd to this keybind
+let g:ctrlp_cmd = 'CtrlP'
 
 let g:ctrlp_prompt_mappings = {
   \ 'PrtBS()':              ['<bs>', '<c-]>'],
