@@ -1,3 +1,5 @@
+" :h 'runtimepath' will show a list of directories which will be searched for
+" runtime files
 set runtimepath^=$XDG_CONFIG_HOME/vim
 set runtimepath+=$XDG_DATA_HOME/vim
 set runtimepath+=$XDG_CONFIG_HOME/vim/after
@@ -20,6 +22,8 @@ set nocompatible
 " Disable the default Vim startup message.
 set shortmess+=I
 
+" 根据文件类型加载ftplugin, 设置缩进, 因此python文件缩进会自动设置为4,
+" /usr/share/vim/vim82/ftplugin/python.vim
 filetype plugin indent on  " Load plugins according to detected filetype.
 syntax on                  " Enable syntax highlighting.
 
