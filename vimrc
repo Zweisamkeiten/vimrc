@@ -45,7 +45,7 @@ set bufhidden   =hide      " 当buffer被丢弃的时候隐藏它
 set cmdheight=1            " 设定命令行的行数为 1
 set laststatus  =2         " Always show statusline.
                            " 显示状态栏 (默认值为 1, 无法显示状态栏)
-set statusline=\ %<%F[%1*%M%*%n%R%H]%=\ %y\ %0(%{&fileformat}\ %{&encoding}\ Ln\ %l,\ Col\ %c/%L%) " 设置在状态行显示的信息
+set statusline=%{FugitiveStatusline()}\ %<%F[%1*%M%*%n%R%H]%=\ %y\ %0(%{&fileformat}\ %{&encoding}\ Ln\ %l,\ Col\ %c/%L%) " 设置在状态行显示的信息
 set display     =lastline  " Show as much as possible of the last line.
 
 set showmode               " Show current mode in command-line.
